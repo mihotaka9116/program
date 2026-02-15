@@ -623,3 +623,28 @@ Footer
         padding-bottom: 0;
     }
 }
+
+.entry-btn {
+    /* 旧：#eb6100 → 新：#b04d21 */
+    background-color: #b04d21; 
+}
+
+.form-submit .btn {
+    /* 旧：#eb6100 → 新：#b04d21 */
+    background-color: #b04d21;
+}
+
+.faq-item dt::before {
+    content: "Q";
+    /* 旧：#eb6100 → 新：#b04d21 */
+    color: #b04d21; 
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.form-table th label span {
+    /* 旧：#eb6100 → 新：#b04d21 */
+    background: #b04d21; 
+    color: #fff;
+    /* ...省略... */
+}
