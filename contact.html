@@ -39,55 +39,47 @@
       </nav>
     </header>
     
-    <main>
-      <div class="page-header">
-        <h1 class="page-title">
-          <span class="ja">お問い合わせ</span>
-          <span class="en">CONTACT</span>
-        </h1>
-      </div>
+   <main>
+  <section class="contact-entry wrapper">
+    <h2 class="section-title">エントリーフォーム</h2>
+    <p class="entry-intro">
+      WEBデザイナー職への応募は、以下のフォームよりお願いいたします。<br>
+      内容を確認後、担当者より5営業日以内に選考結果または面接のご案内を差し上げます。
+    </p>
 
-      <div class="page-head-text wrapper">
-        <p class="title">まずはお気軽に<br class="sp">お問い合わせください。</p>
-        <p class="text">お問い合わせは下記のフォームからお願いいたします。<br>3営業日以内にご返信いたします。</p>
-      </div>
+    <form action="#" method="post" class="entry-form" enctype="multipart/form-data">
+      <table class="form-table">
+        <tr>
+          <th><label for="name">お名前<span>必須</span></label></th>
+          <td><input type="text" id="name" name="name" placeholder="山田 太郎" required></td>
+        </tr>
+        <tr>
+          <th><label for="email">メールアドレス<span>必須</span></label></th>
+          <td><input type="email" id="email" name="email" placeholder="example@design-study.jp" required></td>
+        </tr>
+        <tr>
+          <th><label for="portfolio_url">ポートフォリオURL<span>必須</span></label></th>
+          <td><input type="url" id="portfolio_url" name="portfolio_url" placeholder="https://my-portfolio.com" required></td>
+        </tr>
+        <tr>
+          <th><label for="resume">履歴書・職務経歴書</label></th>
+          <td>
+            <input type="file" id="resume" name="resume" accept=".pdf,.zip">
+            <p class="form-note">※PDF形式またはZIP形式（5MB以内）</p>
+          </td>
+        </tr>
+        <tr>
+          <th><label for="message">自己PR・志望動機</label></th>
+          <td><textarea id="message" name="message" rows="8" placeholder="これまでの実績や、当社で挑戦したいことなどをご記入ください。"></textarea></td>
+        </tr>
+      </table>
 
-      <section class="contact-form wrapper">
-        <h2 class="section-title">お問い合わせフォーム</h2>
-        <form action="" method="post">
-          <dl>
-            <dt>種類<span class="require">*</span></dt>
-            <dd class="radio-group">
-              <div class="item-group">
-                <input type="radio" id="service" name="kind" value="サービスに関するお問い合わせ">
-                <label for="service">サービスに関するお問い合わせ</label>
-              </div>
-              <div class="item-group">
-                <input type="radio" id="interview" name="kind" value="取材に関するお問い合わせ">
-                <label for="interview">取材に関するお問い合わせ</label>
-              </div>
-              <div class="item-group">
-                <input type="radio" id="document" name="kind" value="資料請求">
-                <label for="document">資料請求</label>
-              </div>
-              <div class="item-group">
-                <input type="radio" id="other" name="kind" value="その他">
-                <label for="other">その他</label>
-              </div>
-            </dd>
-            <dt><label for="company">会社名</label></dt>
-            <dd><input id="company" type="text" name="company"></dd>
-            <dt><label for="name">お名前</label><span class="require">*</span></dt>
-            <dd><input id="name" type="text" name="name"></dd>
-            <dt><label for="email">メールアドレス</label><span class="require">*</span></dt>
-            <dd><input id="email" type="email" name="email"></dd>
-            <dt><label for="message">詳細内容</label><span class="require">*</span></dt>
-            <dd><textarea id="message" name="message"></textarea></dd>
-          </dl>
-          <div class="btn"><input type="submit" value="送信する"></div>
-        </form>
-      </section>
-    </main>
+      <div class="form-submit">
+        <button type="submit" class="btn">上記の内容で送信する</button>
+      </div>
+    </form>
+  </section>
+</main>
 
     <footer id="footer">
       <div class="inner wrapper">
