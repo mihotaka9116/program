@@ -690,3 +690,33 @@ Footer
         font-size: 15px;
     }
 }
+
+/* --- 背景やヘッダーの紺色 --- */
+.page-header, 
+.contact, 
+.detail, 
+.flow .item .step {
+    background-color: #1a2942 !important; /* 紺色に変更 */
+    color: #fff;
+}
+
+/* --- FAQやラベルのアクセントカラー --- */
+.faq-item dt::before,
+.form-table th label span,
+.flow .item .text dt,
+.flow .item .text a {
+    color: #1a2942; /* 文字色を紺に */
+}
+
+.form-table th label span,
+.entry-btn,
+.form-submit .btn {
+    background-color: #1a2942; /* 背景を紺に */
+    color: #fff;
+}
+
+/* --- ボタンのホバー動作 --- */
+.entry-btn:hover,
+.form-submit .btn:hover {
+    background-color: #2c3e5a;
+}
