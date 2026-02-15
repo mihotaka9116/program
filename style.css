@@ -490,3 +490,136 @@ Footer
     color: #333;
     font-family: 'Roboto', sans-serif;
 }
+
+/* ==========================================
+   社員インタビュー（旧：Voiceセクションの流用）
+   ========================================== */
+.voice {
+    padding: 100px 0;
+}
+.voice .item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+}
+.voice .item:nth-of-type(even) {
+    flex-direction: row-reverse;
+}
+.voice .item .img {
+    width: 25%;
+    /* 写真を丸く切る場合は以下を追加 */
+    border-radius: 50%;
+    overflow: hidden;
+    aspect-ratio: 1 / 1;
+}
+.voice .item .text {
+    width: 75%;
+    padding: 0 40px;
+}
+.voice .item .comment {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+.voice .item .age {
+    font-size: 14px;
+    color: #666;
+    text-align: right;
+}
+
+/* ==========================================
+   エントリーフォーム（contact.html用）
+   ========================================== */
+.contact-entry {
+    padding: 80px 0;
+}
+.entry-intro {
+    text-align: center;
+    margin-bottom: 50px;
+    line-height: 1.8;
+}
+.entry-form {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.form-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.form-table tr {
+    border-bottom: 1px solid #eee;
+}
+.form-table th {
+    width: 30%;
+    padding: 25px 10px;
+    text-align: left;
+    vertical-align: top;
+}
+.form-table th label span {
+    background: #eb6100; /* 必須ラベル */
+    color: #fff;
+    font-size: 10px;
+    padding: 2px 6px;
+    border-radius: 3px;
+    margin-left: 8px;
+    vertical-align: middle;
+}
+.form-table td {
+    padding: 20px 10px;
+}
+.form-table input[type="text"],
+.form-table input[type="email"],
+.form-table input[type="url"],
+.form-table textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px; /* スマホでのズーム防止 */
+}
+.form-note {
+    font-size: 12px;
+    color: #888;
+    margin-top: 5px;
+}
+.form-submit {
+    text-align: center;
+    margin-top: 40px;
+}
+.form-submit .btn {
+    min-width: 300px;
+    background-color: #eb6100;
+    color: #fff;
+    border: none;
+    padding: 20px;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.form-submit .btn:hover {
+    background-color: #333;
+}
+
+/* スマホ対応（追加分） */
+@media screen and (max-width: 767px) {
+    .voice .item {
+        flex-direction: column !important;
+    }
+    .voice .item .img {
+        width: 150px;
+        margin-bottom: 20px;
+    }
+    .voice .item .text {
+        width: 100%;
+        padding: 0;
+    }
+    .form-table th, .form-table td {
+        display: block;
+        width: 100%;
+    }
+    .form-table th {
+        padding-bottom: 0;
+    }
+}
