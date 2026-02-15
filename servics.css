@@ -1,10 +1,12 @@
 @charset "UTF-8";
 
 /*-------------------------------------------
-サービス内容
+サービス内容（働く環境セクション）
 -------------------------------------------*/
 .detail {
-  background-color: #ffed58;
+  /* 背景色をテラコッタに変更 */
+  background-color: #d97b51; 
+  color: #fff; /* 背景が濃いので文字を白に */
   clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%);
   padding: 100px 0;
   margin-bottom: 80px;
@@ -34,7 +36,7 @@
 }
 
 /*-------------------------------------------
-ご利用の流れ
+ご利用の流れ（選考フローセクション）
 -------------------------------------------*/
 .flow {
   margin-bottom: 100px;
@@ -46,7 +48,9 @@
 .flow .item .step {
   width: 160px;
   height: 140px;
-  background-color: #ffed58;
+  /* STEPのアイコンもテラコッタ、またはアクセントの黒に */
+  background-color: #d97b51; 
+  color: #fff;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
   font-weight: 700;
   flex-shrink: 0;
@@ -66,21 +70,20 @@
   font-size: 22px;
   font-weight: 500;
   margin-bottom: 15px;
+  color: #d97b51; /* 見出しにアクセントカラーを適用 */
 }
 .flow .item .text dd {
   line-height: 1.8;
 }
 .flow .item .text a {
   text-decoration: underline;
+  color: #d97b51; /* リンク色も統一 */
 }
 
 /*-------------------------------------------
 スマートフォン
 -------------------------------------------*/
 @media screen and (max-width: 767px) {
-  /*-------------------------------------------
-  サービス内容
-  -------------------------------------------*/
   .detail {
     clip-path: polygon(0 0, 100% 5%, 100% 95%, 0 100%);
     padding: 80px 0;
@@ -100,9 +103,6 @@
     text-align: center;
   }
 
-  /*-------------------------------------------
-  ご利用の流れ
-  -------------------------------------------*/
   .flow {
     margin-bottom: 40px;
   }
