@@ -68,3 +68,91 @@
     margin: 0 0 15px;
   }
 }
+
+/* ==========================================
+   エントリーフォーム専用スタイル
+   ========================================== */
+.contact-entry {
+    padding: 80px 0;
+}
+
+.entry-intro {
+    text-align: center;
+    margin-bottom: 50px;
+    line-height: 1.8;
+}
+
+.entry-form {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.form-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.form-table tr {
+    border-bottom: 1px solid #eee;
+}
+
+.form-table th {
+    width: 30%;
+    padding: 25px 10px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.form-table th label span {
+    background: #eb6100; /* 必須ラベル */
+    color: #fff;
+    font-size: 0.7rem;
+    padding: 2px 6px;
+    border-radius: 3px;
+    margin-left: 8px;
+    vertical-align: middle;
+}
+
+.form-table td {
+    padding: 20px 10px;
+}
+
+.form-table input[type="text"],
+.form-table input[type="email"],
+.form-table input[type="url"],
+.form-table textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+.form-note {
+    font-size: 0.8rem;
+    color: #888;
+    margin-top: 5px;
+}
+
+.form-submit {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.form-submit .btn {
+    min-width: 300px;
+    cursor: pointer;
+    border: none;
+}
+
+/* スマホ対応 */
+@media (max-width: 767px) {
+    .form-table th, .form-table td {
+        display: block;
+        width: 100%;
+    }
+    .form-table th {
+        padding-bottom: 0;
+    }
+}
