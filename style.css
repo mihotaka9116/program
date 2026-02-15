@@ -720,3 +720,43 @@ Footer
 .form-submit .btn:hover {
     background-color: #2c3e5a;
 }
+
+/* 面積の広い背景を明るくして「ヌケ感」を作る */
+.page-header, 
+.detail,
+.contact {
+    background-color: #f8f9fa !important; /* 真っ白に近いグレー */
+    color: #333 !important;             /* 文字は読みやすい濃いグレー */
+    clip-path: none;                     /* 斜めのカットを消すとよりスッキリします */
+}
+
+/* タイトルやアクセントだけを紺色にする */
+.section-title,
+.page-header .page-title .en,
+.flow .item .text dt {
+    color: #1a2942;
+}
+
+/* 線の色も紺に変更 */
+.section-title::after {
+    background-color: #1a2942;
+}
+
+/* ボタンを紺色にして目立たせる */
+.entry-btn,
+.form-submit .btn,
+.contact .btn {
+    background-color: #1a2942 !important;
+    color: #fff !important;
+    border: none;
+}
+
+/* 選考フローの数字部分だけを紺色に */
+.flow .item .step {
+    background-color: #1a2942 !important;
+    color: #fff !important;
+}
+
+.faq-item dt::before {
+    color: #344e7a; /* 少しだけ明るい紺 */
+}
