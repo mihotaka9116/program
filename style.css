@@ -356,3 +356,82 @@ Footer
   background-color: #333;
   opacity: 1;
 }
+
+/* ==========================================
+   募集要項ページ（Requirements）
+   ========================================== */
+.section-sub-text {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.job-detail-table {
+    max-width: 900px;
+    margin: 0 auto 60px;
+    border-top: 2px solid #333;
+}
+
+.job-detail-table dl {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #ddd;
+}
+
+.job-detail-table dt {
+    width: 30%;
+    padding: 25px 20px;
+    background-color: #f9f9f9;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+.job-detail-table dd {
+    width: 70%;
+    padding: 25px 30px;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.job-detail-table dd ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.job-detail-table dd span {
+    font-size: 0.85rem;
+    color: #666;
+}
+
+/* エントリーエリア */
+.entry-area {
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 60px 20px;
+    border-radius: 8px;
+}
+
+.entry-btn {
+    display: inline-block;
+    background-color: #eb6100; /* 応募ボタンは目立つ色に！ */
+    color: #fff;
+    padding: 20px 60px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+
+/* スマホ対応 */
+@media (max-width: 767px) {
+    .job-detail-table dt,
+    .job-detail-table dd {
+        width: 100%;
+    }
+    .job-detail-table dt {
+        padding: 15px 20px;
+        border-bottom: 1px solid #eee;
+    }
+}
