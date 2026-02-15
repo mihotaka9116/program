@@ -648,3 +648,45 @@ Footer
     color: #fff;
     /* ...省略... */
 }
+
+/* メインビジュアルのテキストを中央に寄せる */
+.mainvisual .inner {
+    display: flex;
+    flex-direction: column; /* 縦並びに変更 */
+    align-items: center;    /* 中央寄せ */
+    text-align: center;     /* テキストを中央揃え */
+    padding: 80px 20px;
+}
+
+.mainvisual .text {
+    width: 100%;            /* 横幅をいっぱい使う */
+    margin-right: 0;        /* 余計な余白を消す */
+    margin-bottom: 40px;    /* 画像との間に余白を作る */
+}
+
+.mainvisual .catchphrase {
+    font-size: 42px;        /* 少し大きくしてインパクトを出す */
+    line-height: 1.5;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.mainvisual .description {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.mainvisual .img {
+    width: 100%;
+    max-width: 600px;       /* 画像が大きくなりすぎないよう調整 */
+}
+
+/* スマホ用の微調整 */
+@media screen and (max-width: 767px) {
+    .mainvisual .catchphrase {
+        font-size: 28px;    /* スマホでは読みやすいサイズに */
+    }
+    .mainvisual .description {
+        font-size: 15px;
+    }
+}
